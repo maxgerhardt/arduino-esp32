@@ -1,4 +1,4 @@
-// Copyright 2015-2021 Espressif Systems (Shanghai) PTE LTD
+// Copyright 2015-2016 Espressif Systems (Shanghai) PTE LTD
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -35,6 +35,7 @@ uint32_t    ledcRead(uint8_t channel);
 double      ledcReadFreq(uint8_t channel);
 void        ledcAttachPin(uint8_t pin, uint8_t channel);
 void        ledcDetachPin(uint8_t pin);
+double      ledcChangeFrequency(uint8_t channel, double freq, uint8_t resolution_bits);
 
 
 #ifdef __cplusplus
